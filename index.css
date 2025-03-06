@@ -1,5 +1,10 @@
+/* font-family: 'Cursed Timer ULiL', sans-serif; */
+
 body {
     margin: 0;
+    background-color: #32384e;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
