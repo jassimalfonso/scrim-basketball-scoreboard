@@ -1,22 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-width=1.0">
-        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
-
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
-            <div>
-                <h3>HOME</h3>
-                <p id="score-home"></p>
-                <button onclick="upOne()">+1</button>
+        <div class="main-container">
+            <div class="score-container">
+                <div class="card-container">
+                    <h3>HOME</h3>
+                    <p id="home-score" class="score">0</p>
+                    <div class="card-button-container">
+                        <button class="score-button" id="home-add-one">+1</button>
+                        <button class="score-button" id="home-add-two"">+2</button>
+                        <button class="score-button" id="home-add-three"">+3</button>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <h3>AWAY</h3>
+                    <p id="away-score" class="score">0</p>
+                    <div class="card-button-container">
+                        <button class="score-button" id="away-add-one">+1</button>
+                        <button class="score-button" id="away-add-two"">+2</button>
+                        <button class="score-button" id="away-add-three"">+3</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>GUEST</h3>
-            </div>
+            <button class="new-game" id="new-game-button">New Game</button>
         </div>
         <script src="index.js"></script>
     </body>
